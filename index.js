@@ -1,7 +1,15 @@
+
+
+
+
 ReactDOM.render(
-    <ul>
-        <li>item 1</li>
-        <li>item 2</li>
-    </ul>,
+    <nav className="navbar">
+        <h1>Matt's Market</h1>
+        <ul>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>,
     document.getElementById('root')
 );
