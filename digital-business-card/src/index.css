@@ -71,5 +71,43 @@ html, body {
     border-radius: 6px;
     border: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: .4px;
 }
 
+.contact--email-btn > img {
+    height: 12px;
+}
+
+.contact--linkedin-btn {
+    background-color: #5093e2;
+    color: #fff;
+}
+
+.contact--linkedin-btn > img {
+    height: 16px;
+    width: 16px;
+}
+
+.about--container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+    margin-left: 33px;
+    margin-right: 33px;
+}
+
+.about--title {
+    font-size: 16px;
+}
+
+.about--text {
+    font-size: 10px;
+    line-height: 16px;
+    margin-top: 6px;
+}
