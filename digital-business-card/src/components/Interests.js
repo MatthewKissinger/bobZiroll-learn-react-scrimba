@@ -1,7 +1,7 @@
 export default function Interests() {
     return (
         <div>
-            <h1>Interests section goes here</h1>
+            <h4>Interests section goes here</h4>
         </div>
     )
 }
