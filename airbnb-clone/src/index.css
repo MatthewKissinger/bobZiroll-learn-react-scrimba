@@ -2,4 +2,40 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 7.5px 0px #0000001A;
+}
+
+nav > img {
+  height: 26px;
+  margin-left: 32px;
+}
+
+.hero--container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero--image {
+  width: 400px;
+  align-self: center;
+  margin: 24px;
+}
+
+.hero--title {
+  font-size: 36px;
+  margin-left: 36px;
+}
+
+.hero--text {
+  font-size: 16px;
+  margin-top: 16px;
+  margin-left: 36px;
+  max-width: 320px;
 }
