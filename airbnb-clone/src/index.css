@@ -39,3 +39,42 @@ nav > img {
   margin-left: 36px;
   max-width: 320px;
 }
+
+.card--container {
+  /* border: 1px solid red; */
+  height: 320px;
+  width: 180px;
+  margin: 12px;
+}
+
+.card--image {
+  width: 100%;
+}
+
+.card--rating-container {
+  display: flex;
+}
+
+.card--star {
+  height: 14px;
+}
+
+.card--rating-text {
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.card--rating-text-gray {
+  color: #918E9B;
+}
+
+.card--title {
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 6px;
+}
+
+.card--price {
+  font-size: 12px;
+  margin-top: 6px;
+}
