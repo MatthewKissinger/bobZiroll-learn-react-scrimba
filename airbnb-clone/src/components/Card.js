@@ -1,7 +1,7 @@
 import katieImg from '../images/katie.png';
 import starIcon from '../images/star-icon.png';
 
-export default function Card() {
+export default function Card(props) {
     return (
         <div className="card--container">   
             <img className='card--image' src={katieImg} alt="Katie Zaferes"></img>
