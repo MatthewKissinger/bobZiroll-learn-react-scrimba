@@ -1,21 +1,26 @@
 import Navbar from "./components/Navbar";
-// import Hero from "./components/Hero";
+import Hero from "./components/Hero";
 import Card from "./components/Card";
-
+import data from "./data"
 
 function App() {
+  const cardComponents = data.map(item => {
+    return (
+      <Card 
+        key={item.id}
+        {...item}
+      />
+    )
+  })
+
   return (
     <div className="app--container">
       <Navbar />
-      {/* <Hero /> */}
-      <Card 
-        img="katie.png"
-        rating="5.0"
-        reviewCount={6}
-        country="USA"
-        title="Life Lessons with Kate Zaferes"
-        price={136}
-      />
+      <Hero />
+      <div className="cards-list">
+        {cardComponents}
+      </div>
+      
     </div>
   );
 }
