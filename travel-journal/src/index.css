@@ -43,3 +43,73 @@ header > p {
   color: #fff;
   letter-spacing: -1px;
 }
+
+.cards--list {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card--container {
+  display: flex;
+  width: 480px;
+}
+
+.card--image {
+  width: 125px;
+  border-radius: 5px;
+}
+
+.card--info--container {
+  padding: 16px;
+  text-align: left;
+}
+
+.card--location--container {
+  display: flex;
+}
+
+.card--map-icon {
+  height: 10px;
+}
+
+.card--location {
+  margin-left: 4px;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.card--maps-link {
+  margin-left: 10px;
+  font-size: 10px;
+  color: #918e9b;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.card--title {
+  margin-top: 6px;
+  font-size: 26px;
+  color: #2b283a;
+}
+
+.card--dates {
+  margin-top: 16px;
+  display: flex;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.card--description {
+  max-width: 320px;
+  margin-top: 6px;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.card--line--break {
+  border: 1px solid #f5f5f5;
+  margin-top: 25px;
+}
