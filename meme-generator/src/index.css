@@ -59,6 +59,8 @@ header > img {
   margin-top: 36px;
   /* border: 1px solid red; */
   max-width: 500px;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -97,5 +99,13 @@ header > img {
 .meme--button-image {
   position: absolute;
   right: 120px;
+}
+
+.meme--image {
+  margin-top: 20px;
+  max-height: 500px;
+  max-width: 100%;
+  align-self: center;
+  justify-self: center;
 }
 

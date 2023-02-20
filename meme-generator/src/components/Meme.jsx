@@ -1,11 +1,16 @@
-import memeData from '../memesData'
+import React from 'react';
+import memeData from '../memesData';
 
 export default function Meme() {
     const memesArray = memeData.data.memes;
 
-    function getRandomUrl() {
-        const randomNum = Math.floor(Math.random() * 100);
-        console.log(memesArray[randomNum].url);
+    const [memeImage, setMemeImage] = React.useState("");
+
+    function getMemeImage() {
+        const randomNum = Math.floor(Math.random() * memesArray.length);
+        const url = memesArray[randomNum].url;
+
+        setMemeImage(url);
     }
 
     return (
@@ -22,7 +27,7 @@ export default function Meme() {
                     placeholder="bottom text"
                 />
                 <button 
-                    onClick={getRandomUrl}
+                    onClick={getMemeImage}
                 >
                     Get a new meme image
                     <span className="material-symbols-outlined meme--button-image">
@@ -30,6 +35,7 @@ export default function Meme() {
                     </span>
                 </button>
             </div> 
+            <img className='meme--image' src={memeImage}></img>
         </div>
     )
 }
