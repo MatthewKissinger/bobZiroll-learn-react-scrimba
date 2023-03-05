@@ -14,11 +14,11 @@ export default function Meme() {
     React.useEffect(() => {
         fetch("https://api.imgflip.com/get_memes")
             .then(res => res.json())
-            .then(data => setAllMemes(data))
+            .then(data => setAllMemes(data.data.memes))
     }, [])
 
     function getMemeImage() {
-        const memesArray = allMemes.data.memes;
+        const memesArray = allMemes;
         const randomNum = Math.floor(Math.random() * memesArray.length);
         const url = memesArray[randomNum].url;
 
